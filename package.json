@@ -23,14 +23,19 @@
   "homepage": "https://github.com/28msec/zorba-nodejs#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.2.1",
     "gulp-jshint": "^2.0.0",
     "gulp-jsonlint": "^1.1.1",
     "gulp-load-plugins": "^1.1.0",
     "gulp-util": "^3.0.7",
+    "jasmine-core": "^2.3.4",
+    "jasmine2-pit": "^0.2.0",
     "js-yaml": "^3.4.4",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
+    "karma-jasmine": "^0.3.6",
     "map-stream": "0.0.6",
+    "q": "^1.4.1",
     "request": "^2.67.0",
     "swagger-js-codegen": "^1.1.5"
   }

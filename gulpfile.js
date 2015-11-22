@@ -52,10 +52,14 @@ gulp.task('swagger:js', ['swagger:resolve'], function(){
     var dest = 'lib';
     apis.forEach(function(api){
         var swagger = JSON.parse(fs.readFileSync(api.swagger, 'utf-8'));
-        var source = CodeGen.getAngularCode({ moduleName: api.moduleName, className: api.className, swagger: swagger });
+        var source = CodeGen.getNodeCode({ moduleName: api.moduleName, className: api.className, swagger: swagger });
         $.util.log('Generated ' + api.moduleName + '.js from ' + api.swagger);
         fs.writeFileSync(dest + '/' + api.moduleName + '.js', source, 'UTF-8');
     });
 });
 
-gulp.task('default', ['swagger:js', 'lint:json', 'lint:js']);
+gulp.task('tests', ['swagger:js'], function(){
+    return gulp.src('tests/*.js').pipe($.jasmine());
+});
+
+gulp.task('default', ['tests', 'lint:json', 'lint:js']);
