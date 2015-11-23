@@ -34,9 +34,12 @@
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
     "karma-jasmine": "^0.3.6",
+    "lodash": "^3.10.1",
     "map-stream": "0.0.6",
+    "swagger-js-codegen": "^1.1.6"
+  },
+  "dependencies": {
     "q": "^1.4.1",
-    "request": "^2.67.0",
-    "swagger-js-codegen": "^1.1.5"
+    "request": "^2.67.0"
   }
 }
