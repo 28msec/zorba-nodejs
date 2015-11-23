@@ -2,7 +2,7 @@
   "name": "zorba-nodejs",
   "version": "0.0.1",
   "description": "Node binding for Zorba",
-  "main": "index.js",
+  "main": "lib/zorba-api.js",
   "scripts": {
     "test": "gulp"
   },
