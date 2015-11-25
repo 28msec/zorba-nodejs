@@ -8,7 +8,7 @@ var ZorbaAPI = require('../lib/zorba-api').ZorbaAPI;
 
 describe("Test Arithmetic Operation: ", function() {
     pit("string", function() {
-        var api = new ZorbaAPI('http://192.168.99.100:81/v1');
+        var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1');
         return api.evaluate({
             query: '1 + 1'
         }).then(function(result){
@@ -17,7 +17,7 @@ describe("Test Arithmetic Operation: ", function() {
     });
 
     pit("json", function() {
-        var api = new ZorbaAPI('http://192.168.99.100:81/v1');
+        var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1');
         return api.evaluate({
             query: 'jsoniq version "1.0"; { foo: true }'
         }).then(function(result){
@@ -26,7 +26,7 @@ describe("Test Arithmetic Operation: ", function() {
     });
 
     pit("xml", function() {
-        var api = new ZorbaAPI('http://192.168.99.100:81/v1');
+        var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1');
         return api.evaluate({
             query: '<foo />'
         }).then(function(result){
@@ -35,7 +35,7 @@ describe("Test Arithmetic Operation: ", function() {
     });
 
     pit("empty", function() {
-        var api = new ZorbaAPI('http://192.168.99.100:81/v1');
+        var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1');
         return api.evaluate({
             query: '()'
         }).then(function(result){
