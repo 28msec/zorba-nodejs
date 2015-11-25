@@ -20,3 +20,7 @@ api.evaluate({
 });
 ```
 
+An endpoint for testing is available at http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81:
+```javascript
+var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81');
+```
