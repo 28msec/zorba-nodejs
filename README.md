@@ -20,7 +20,7 @@ api.evaluate({
 });
 ```
 
-An endpoint for testing is available at http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81. It is based on the image docker image at https://hub.docker.com/r/wcandillon/zorba-server-dev/
+An endpoint for testing is available at http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1. It is based on the image docker image at https://hub.docker.com/r/wcandillon/zorba-server-dev/
 ```javascript
-var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81');
+var api = new ZorbaAPI('http://zorba-server-dev-f13fb543-1.wcandillon.cont.tutum.io:81/v1');
 ```
